@@ -14,11 +14,21 @@ public class LineHolder extends RecyclerView.ViewHolder {
     private TextView ViewNome;
     private ImageButton imgDelete;
 
+    public TextView getViewNome() {
+        return ViewNome;
+    }
+
+    public ImageButton getImgDelete() {
+        return imgDelete;
+    }
+
+
     public LineHolder(@NonNull View itemView) {
         super(itemView);
 
         ViewNome = itemView.findViewById(R.id.itemViewNomeBD);
         imgDelete = itemView.findViewById(R.id.btnDelete);
+
 
     }
 }
